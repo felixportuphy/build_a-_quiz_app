@@ -3,16 +3,16 @@ const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById('finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 const cat = localStorage.getItem("cat");
-let general = 9;
-let science = 18;
-let history = 23;
-let sports = 21;
+let general = "9";
+let science = "18";
+let history = "23";
+let sports = "21";
 
 
-const genHighScores = JSON.parse(localStorage.getItem('general')) || [];
-const sciHighScores = JSON.parse(localStorage.getItem('science')) || [];
-const hisHighScores = JSON.parse(localStorage.getItem('history')) || [];
-const spoHighScores = JSON.parse(localStorage.getItem('sports ')) || [];
+const genHighScores = JSON.parse(localStorage.getItem(general)) || [];
+const sciHighScores = JSON.parse(localStorage.getItem(science)) || [];
+const hisHighScores = JSON.parse(localStorage.getItem(history)) || [];
+const spoHighScores = JSON.parse(localStorage.getItem(sports)) || [];
 const MAX_HIGH_SCORES = 5;
 
 finalScore.innerText = mostRecentScore;
